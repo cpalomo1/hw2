@@ -6,7 +6,7 @@ $(document).ready(function() {
     
     //variables
     var subtotal;
-    var shipping;
+    var shipping = 0;
     
     //event listeners
     $("#item1").on("change", getTotal);
@@ -31,10 +31,10 @@ $(document).ready(function() {
         }//isFormValid
         
         function getShipping() {
-            if ($("#choice").is(":checked")) {
-                return 0.0;
-            } else {
+            if ($("#choice2").is(":checked")) {
                 return 10.0;
+            } else {
+                return 0.0;
             }
         }//getShipping
     
