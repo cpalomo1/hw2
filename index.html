@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/darkly/bootstrap.min.css" integrity="sha384-Bo21yfmmZuXwcN/9vKrA5jPUMhr7znVBBeLxT9MA4r2BchhusfJ6+n8TLGUcRAtL" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <title>Shopping Cart</title>
+    </head>
+    <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">The Online Tech Store</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span> </button>
+    </nav>
+    <div class="jumbotron">
+        <h4 class="display-3" style="font-size: 3.5em;">Your shopping cart</h4>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <h3 class="card-header">Samsung 55" LED Television</h3>
+                    <img style="height: 400px; width: 100%; display: block;" src="img/tv.png"
+                        alt="Card image">
+                    <div class="card-body">
+                        <p class="card-text">Price: $1099.00</p>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Qty: <span style="float:right;"><input type="number" id="item1" value="1"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <h3 class="card-header">Samsung Surround Sound System</h3>
+                    <img style="height: 400px; width: 100%; display: block;" src="img/sound.png"
+                        alt="Card image">
+                    <div class="card-body">
+                        <p class="card-text">Price: $299.00</p>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Qty: <span style="float:right;"><input type="number" id="item2" value="1"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="list-group" style="width: 30%; margin: auto;">
+        <a class="list-group-item list-group-item-action enabled">Choose shipping: 
+                            <span style="margin-right: 40px; float:right;"><label><input type="radio" name="shippingChoice" id="choice" 
+                                value="s"> Standard (Free)</label></span>
+                            <span style="margin-right: 40px; float:right;"><label><input type="radio" name="shippingChoice" id="choice2" 
+                                value="f"> Fast (+$10)</label></span>
+        </a>
+        <a class="list-group-item list-group-item-action" id="subtotal">
+        </a>
+        <a class="list-group-item list-group-item-action" id="total">
+        </a>
+        <a class="list-group-item list-group-item-secondary" id="validationFdbk" style="color: red">
+        </a>
+    </div>
+    <br><br>
+    <button class="btn-block btn-primary btn-lg">Proceed to Checkout</button>
+    </div>
+    <br><br>
+    </body>
+    <footer>
+        <div class="container text-center" style="font-size: .8em">
+            <figure>
+                <img src="img/csumblogo.png" alt="CSUMB logo" style="width:20%; height:20%;" />
+            </figure>
+                CST336 Internet Programming. 2020&copy; Palomo-Ramirez <br />
+                    <strong>Disclaimer:</strong> The information in this webpage is fictitious. <br />
+                It is used for academic purposes only.
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/script.js"></script>
+</html>
