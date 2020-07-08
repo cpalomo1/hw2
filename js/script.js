@@ -32,9 +32,9 @@ $(document).ready(function() {
         
         function getShipping() {
             if ($("#choice").is(":checked")) {
-                return 10.0;
-            } else {
                 return 0.0;
+            } else {
+                return 10.0;
             }
         }//getShipping
     
